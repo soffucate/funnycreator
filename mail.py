@@ -4,11 +4,8 @@
 import requests,json,datetime,os; os.system("clear")
 """
 Build Date: Sun Dec 12 16:31:22 WIB 2021
-
 Author: xolvadev
-
 Join us!
-
 t.me/paddirdp - t.me/channel_justinfo
 """
 
@@ -22,11 +19,8 @@ def mail(line):
 	now = datetime.datetime.now()
 	print(f"""
 [Email] >>> {x}
-
 [Date] >>> {now}
-
 [Waiting For Messages..]
-
 Use CTRL+Z To Cancel!\n""")
 	print(line)
 	user = x.split("@")[0]
@@ -39,15 +33,11 @@ Use CTRL+Z To Cancel!\n""")
 			try:
 				z = requests.get(f"https://www.1secmail.com/api/v1/?action=readMessage&login={user}&domain={dom}&id={z[c]['id']}").json()
 				print(f"""New Message!
-
 From: {z['from']}
-
 Subject: {z['subject']}
 Date: {z['date']}
 ID: {z['id']}
-
 Body: {z['body']}
-
 {line}""")
 				c += 1
 			except KeyboardInterrupt:

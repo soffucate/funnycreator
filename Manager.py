@@ -53,7 +53,7 @@ $$ |  $$\ $$ |      $$ | \____$$\   $$ |$$\ $$  __$$ |$$ |$$ | $$  $$<        $$
     # cookieBtn
     driver.find_element(By.ID, 'cookieBtn').click()
     nickname_input = driver.find_element(By.ID, 'username-input')
-    nickname_input.send_keys(password)
+    nickname_input.send_keys("squeazzy_" + password)
     nickname_input = driver.find_element(By.ID, 'email-input')
     #nickname_input.send_keys(adolf)
     print("OPEN email.py U HAVE 8 SECONDS")
@@ -86,6 +86,7 @@ $$ |  $$\ $$ |      $$ | \____$$\   $$ |$$\ $$  __$$ |$$ |$$ | $$  $$<        $$
     x = open("accounts.txt")
     print(x.read())
     passwordd = "Squeazzy_GenA4$"
+    nigga = "squeazzy_" + password
     print("CHECK OUT email.py")
     if os.path.exists("accounts.txt"):
         with open("accounts.txt", "r") as SAVEACCOUNTS:
@@ -99,7 +100,7 @@ $$ |  $$\ $$ |      $$ | \____$$\   $$ |$$\ $$  __$$ |$$ |$$ | $$  $$<        $$
             ACCOUNT.write("Cristalix Gen\n\n")
         else:
             ACCOUNT.write(f"{LASTACCOUNTS}\n\n")
-        ACCOUNT.write(f"Nickname: {password}\n")
+        ACCOUNT.write(f"Nickname: {nigga}\n")
         ACCOUNT.write(f"Password: {passwordd}\n")
         ACCOUNT.close()
 
