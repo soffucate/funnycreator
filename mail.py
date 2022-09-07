@@ -59,28 +59,29 @@ Body: {z['body']}
 			pass
 banner = """
            _
-          |E]
-        .-|=====-.
-        | | mail |
-     ___|________|
-       Py3  ||
-            ||
-            ||   By xolvadev
-     ,;,    ||   )_(,;;;,
-     <_>  \ ||   \|/ \_/
-     \|/  \\||  \\|   |//
-v1.0_\|//_\\|///_\V/_\|//__
+Just type 0 and press enter.
+Just type 0 and press enter.
+Just type 0 and press enter.
+Just type 0 and press enter.
+Just type 0 and press enter.
+Just type 0 and press enter.
+       By xolvadev
+   Just type 0 and press enter.
+   Just type 0 and press enter.
+   Just type 0 and press enter.
+   Just type 0 and press enter.
+   Just type 0 and press enter.
 """
 
 def main():
 	line = "="*35
 	print(banner)
 	print(line)
-	print("[00] Exit Program.")
-	print("[01] Get Email & Receive Message")
-	print("[02] Report Bugs - Error")
-	print("[03] More Tools")
-	print("[04] Join Channel Telegram")
+	print("[00] Just type 0 and press enter.")
+	print("[01] Just type 0 and press enter.")
+	print("[02] Just type 0 and press enter.")
+	print("[03] Just type 0 and press enter.")
+	print("[04] Just type 0 and press enter.")
 	print(line)
 	inp = input("xv@tempmail >>> ")
 	while inp == "":
