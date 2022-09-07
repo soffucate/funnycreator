@@ -2,8 +2,8 @@ import ctypes
 
 from selenium import webdriver
 import time
-import requests, json, datetime, os;
-import random
+import os
+
 
 os.system("clear")
 
@@ -28,6 +28,7 @@ password = "".join(random.sample(ans,length))
 
 
 try:
+    ctypes.windll.kernel32.SetConsoleTitleW("Cristalix Gen v 1.1.2")
     os.system("color 02")
     print("""
  $$$$$$\            $$\             $$\               $$\ $$\                  $$$$$$\                      
@@ -71,22 +72,21 @@ $$ |  $$\ $$ |      $$ | \____$$\   $$ |$$\ $$  __$$ |$$ |$$ | $$  $$<        $$
     print("1")
     nickname_input = driver.find_element(By.ID, 'password-input')
     print("FUCKED.")
-    ctypes.windll.kernel32.SetConsoleTitleW("Cristalix Gen v 1.0.0")
     os.system("cls")
     os.system("color 03")
     nickname_input.send_keys('Squeazzy_GenA4$')
     nickname_input = driver.find_element(By.ID, 'repeat-password-input')
     nickname_input.send_keys('Squeazzy_GenA4$')
-    time.sleep(3)
+    time.sleep(1)
     driver.find_element(By.ID, 'agreed-input').click()
-    time.sleep(3)
+    time.sleep(1)
     driver.find_element(By.ID, 'register-button').click()
     driver.get_screenshot_as_file("1.png")
     driver.save_screenshot("2.png")
     x = open("accounts.txt")
     print(x.read())
     passwordd = "Squeazzy_GenA4$"
-    nigga = "squeazzy_" + password
+    nigga = "squeazzy_"
     print("CHECK OUT email.py")
     if os.path.exists("accounts.txt"):
         with open("accounts.txt", "r") as SAVEACCOUNTS:
@@ -100,7 +100,7 @@ $$ |  $$\ $$ |      $$ | \____$$\   $$ |$$\ $$  __$$ |$$ |$$ | $$  $$<        $$
             ACCOUNT.write("Cristalix Gen\n\n")
         else:
             ACCOUNT.write(f"{LASTACCOUNTS}\n\n")
-        ACCOUNT.write(f"Nickname: {nigga}\n")
+        ACCOUNT.write(f"Nickname: {nigga + password}\n")
         ACCOUNT.write(f"Password: {passwordd}\n")
         ACCOUNT.close()
 
